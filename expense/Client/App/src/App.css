@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body {
+  font-family: 'Istok Web', sans-serif;
+  color: black;
+}
+
+h1 {
+  font-family: "Itim", cursive;
+  letter-spacing: 4px;
+}
+
+#root {
+  background-color: white;
+  margin: auto;
+  /* padding: 2rem; */
+}
+
+p,
+button {
+  font-family: "Itim", cursive;
+  /* font-family: "Crimson Text", serif; */
+  font-weight: 100;
+}
+
+h4 {
+  color: #FF7545;
+}
+
+
+/* Define the animation */
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-notification {
+  animation: slideInFromRight 0.5s forwards;
+}
+
+
+@keyframes blink {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.custom-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
